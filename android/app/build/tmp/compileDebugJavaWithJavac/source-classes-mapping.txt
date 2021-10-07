@@ -1,0 +1,14 @@
+com/foodrecipeapp/MainApplication.java
+ com.foodrecipeapp.MainApplication
+ com.foodrecipeapp.MainApplication$1
+com/foodrecipeapp/BuildConfig.java
+ com.foodrecipeapp.BuildConfig
+com/foodrecipeapp/MainActivity.java
+ com.foodrecipeapp.MainActivity
+com/foodrecipeapp/ReactNativeFlipper.java
+ com.foodrecipeapp.ReactNativeFlipper
+ com.foodrecipeapp.ReactNativeFlipper$1
+ com.foodrecipeapp.ReactNativeFlipper$2
+ com.foodrecipeapp.ReactNativeFlipper$2$1
+com/facebook/react/PackageList.java
+ com.facebook.react.PackageList
