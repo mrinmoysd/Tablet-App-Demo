@@ -13,16 +13,30 @@ import java.util.ArrayList;
 
 // @react-native-community/masked-view
 import org.reactnative.maskedview.RNCMaskedViewPackage;
+// @react-native-community/progress-bar-android
+import com.reactnativecommunity.androidprogressbar.RNCProgressBarPackage;
+// @react-native-community/progress-view
+import com.reactnativecommunity.progressview.RNCProgressViewPackage;
+// react-native-fs
+import com.rnfs.RNFSPackage;
 // react-native-gesture-handler
 import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
 // react-native-linear-gradient
 import com.BV.LinearGradient.LinearGradientPackage;
+// react-native-maps
+import com.airbnb.android.react.maps.MapsPackage;
+// react-native-pdf
+import org.wonday.pdf.RCTPdfView;
 // react-native-reanimated
 import com.swmansion.reanimated.ReanimatedPackage;
 // react-native-safe-area-context
 import com.th3rdwave.safeareacontext.SafeAreaContextPackage;
 // react-native-screens
 import com.swmansion.rnscreens.RNScreensPackage;
+// react-native-vector-icons
+import com.oblador.vectoricons.VectorIconsPackage;
+// rn-fetch-blob
+import com.RNFetchBlob.RNFetchBlobPackage;
 
 public class PackageList {
   private Application application;
@@ -69,11 +83,18 @@ public class PackageList {
     return new ArrayList<>(Arrays.<ReactPackage>asList(
       new MainReactPackage(mConfig),
       new RNCMaskedViewPackage(),
+      new RNCProgressBarPackage(),
+      new RNCProgressViewPackage(),
+      new RNFSPackage(),
       new RNGestureHandlerPackage(),
       new LinearGradientPackage(),
+      new MapsPackage(),
+      new RCTPdfView(),
       new ReanimatedPackage(),
       new SafeAreaContextPackage(),
-      new RNScreensPackage()
+      new RNScreensPackage(),
+      new VectorIconsPackage(),
+      new RNFetchBlobPackage()
     ));
   }
 }

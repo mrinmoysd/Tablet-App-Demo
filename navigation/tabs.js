@@ -6,7 +6,8 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs"
 import { COLORS, FONTS, icons } from "../constants";
 import { TabIcon } from "../components";
 import {useIsTablet} from '../isTabletContext';
-import { MainScreen, Home, Profile } from "../screens";
+import { MainScreen, Home, Profile, Table, TableNew } from "../screens";
+import FilesStack from "../stacks/FilesStack";
 
 const Tab = createBottomTabNavigator()
 
@@ -38,6 +39,20 @@ const Tabs = () => {
                 name="Profile"
                 component={Profile}
                 options={{
+                    tabBarIcon:({focused}) => <TabIcon focused={focused} icon={icons.settings} />
+                }}
+            />
+            <Tab.Screen
+                name="Table"
+                component={Table}
+                options={{
+                    tabBarIcon:({focused}) => <TabIcon focused={focused} icon={icons.settings} />
+                }}
+            />
+            <Tab.Screen
+                name="Table New"
+                component={FilesStack}
+                options={{headerShown: false,
                     tabBarIcon:({focused}) => <TabIcon focused={focused} icon={icons.settings} />
                 }}
             />

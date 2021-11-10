@@ -1,6 +1,7 @@
 import images from "./images"
 import icons from "./icons"
 
+
 const userList = [
     {
         id: 1,
@@ -267,5 +268,5 @@ const categories = userList
 
 export default {
     userList,
-    categories
+    categories,
 }
